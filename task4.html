@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <title>Title</title>
+    <style>
+        .pop{
+            height:100%;
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top:0;
+            left:0;
+            background:rgba(0,0,0,.5);
+        }
+        .pop>div{
+            width:300px;
+            height:200px;
+            background: url(scape.png) 100% 100% no-repeat;
+            background-size: cover;
+            animation: turn 1s 1;
+        }
+        @keyframes turn {
+            0% {transform:rotate(0deg)}
+            50%  {transform:rotate(90deg)}
+            100%  {transform:rotate(0deg)}
+        }
+        @-webkit-keyframes turn /* Safari and Chrome */
+        {
+           0% {transform:rotate(0deg)}
+           50%  {transform:rotate(90deg)}
+           100%  {transform:rotate(0deg)}
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h3>测试页面</h3>
+    <div class="pop">
+        <div></div>
+    </div>
+</div>
+</body>
+</html>
